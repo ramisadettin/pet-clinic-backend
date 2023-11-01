@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "dotenv -e .env node app.js",
-    "dev": "dotenv -e .env nodemon app.js"
+    "dev": "dotenv -e .env nodemon app.js",
+    "pro": "dotenv -e .env.production node app.js"
   },
   "keywords": [],
   "author": "",
