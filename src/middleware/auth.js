@@ -7,7 +7,7 @@ const auth = async (req, res, next) => {
   try {
     // checking the token comming from the client's browser if valid or not
     const token = req.header('Authorization').replace('Bearer ', '')
-    const data = jwt.verify(token, 'petappr&r')
+    const data = jwt.verify(token, process.env.JWT_KEY)
 
     // checking the connection to the database
     try {
